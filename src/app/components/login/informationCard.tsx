@@ -14,7 +14,7 @@ export default function InformationCard(){
         count:'100k+'
     },
 ]
-    return<div className="w-[447px] h-[170px] border shadow-xl rounded-xl flex flex-col">
+    return<div className="min-w-[447px] h-[170px] border shadow-xl rounded-xl flex flex-col ml-[170px] mb-10">
 <div className="flex flex-row items-center justify-start w-full gap-2 py-[21px] pl-[22px]">
     {/* <Image href="/public/image.png"/> */}
     <Image src={`/imagelogin.png`} alt={"logo"} width={28} height={31} className=""/>
