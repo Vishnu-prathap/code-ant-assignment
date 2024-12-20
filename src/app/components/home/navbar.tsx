@@ -24,7 +24,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="flex flex-col justify-between p-4 w-[242px] h-screen border-r">
+    <div className="flex bg-white flex-col justify-between p-4 w-[242px] h-screen border-r">
       
       {/* Top Section */}
       <div>
