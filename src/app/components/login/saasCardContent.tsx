@@ -25,7 +25,7 @@ export default function SAASCardContent(){
         {/* <Button>Sign in with Github</Button> */}
 
         {buttonData.map((item)=>{return(
-            <Button onPress={()=>router.push('/')} key={item.name} startContent={<Image src={`${item.logo}`} alt={`${item.name}`} width={24} height={24}/>} className="border" size="md" fullWidth variant="light">Sign in with {item.name}</Button>
+            <Button onPress={()=>router.push('/')} key={item.name} startContent={<Image src={`${item.logo}`} alt={`${item.name}`} width={24} height={24}/>} className="border w-[300px]" radius="sm" size="md" fullWidth variant="light">Sign in with {item.name}</Button>
         )})}
     </div>)
 }

@@ -20,11 +20,11 @@ export default function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const buttonContent = [
-        { title: "Repositories", logo: <AiOutlineHome className="w-[24px] h-[24px]" />, key: "repositories" },
-        { title: "AI Code Review", logo: <IoCodeSlashOutline className="w-[24px] h-[24px]" />, key: "aicodereview" },
-        { title: "Cloud Security", logo: <IoMdCloudOutline className="w-[24px] h-[24px]" />, key: "cloudsecurity" },
-        { title: "How to Use", logo: <LuBookText className="w-[24px] h-[24px]" />, key: "howtouse" },
-        { title: "Settings", logo: <LuSettings className="w-[24px] h-[24px]" />, key: "settings" },
+        { title: "Repositories", logo: <AiOutlineHome className="w-[18px] h-[18px]" />, key: "repositories" },
+        { title: "AI Code Review", logo: <IoCodeSlashOutline className="w-[18px] h-[18px]"  />, key: "aicodereview" },
+        { title: "Cloud Security", logo: <IoMdCloudOutline className="w-[18px] h-[18px]"  />, key: "cloudsecurity" },
+        { title: "How to Use", logo: <LuBookText className="w-[18px] h-[18px]"  />, key: "howtouse" },
+        { title: "Settings", logo: <LuSettings className="w-[18px] h-[18px]"  />, key: "settings" },
     ];
 
     const toggleMobileMenu = () => {
@@ -87,7 +87,7 @@ export default function Navbar() {
                             fullWidth 
                             variant="light" 
                             className="flex items-center justify-start text-medium font-bold" 
-                            startContent={<IoCallOutline className="w-[24px] h-[24px]" />}
+                            startContent={<IoCallOutline className="w-[18px] h-[18px]"  />}
                         >
                             Support
                         </Button>
@@ -96,7 +96,7 @@ export default function Navbar() {
                             variant="light" 
                             onPress={() => router.push('/login')}  
                             className="flex items-center justify-start text-medium font-bold" 
-                            startContent={<LuLogOut className="w-[24px] h-[24px]"/>}
+                            startContent={<LuLogOut className="w-[18px] h-[18px]" />}
                         >
                             Logout
                         </Button>

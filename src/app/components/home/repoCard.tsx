@@ -56,13 +56,13 @@ export default function RepoCard() {
             <hr className="border-t border-gray-300 absolute left-0 right-0"></hr>
 
         <div className='flex flex-row p-4 gap-x-2'>
-            <p className='font-medium'>{item.name}</p>
+            <p className='font-semibold hover:underline'>{item.name}</p>
           <Chip size='sm' variant='faded' color='primary' className="border-blue-200">
             {item.viewingPermission}
           </Chip>
         </div>
         <div className='flex flex-row pl-4 gap-x-6 text-sm items-center justify-start pb-4'>
-          <div className='flex flex-row items-center justify-center gap-1'>
+          <div className='flex flex-row items-center justify-center gap-1 font-light'>
             <p className=''>{item.languageUsed}</p>
             <Image
               src='/bluedot.png'

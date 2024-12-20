@@ -5,8 +5,8 @@ import SelfHostedTabContent from "./selfHostedTabContent";
 
 export default function SignUpCard() {
     return (
-        <div className="flex flex-col bg-white items-center justify-center p-4 gap-4 w-[408px] max-h-[582.34px] md:w-[672px] md:max-h-[960px] rounded-xl border">
-            <div className="flex flex-row items-center justify-center gap-2">
+        <div className="flex flex-col bg-white items-center justify-center p-4 md:my-8 gap-4 w-[408px] max-h-[582.34px] md:w-[672px] md:max-h-[960px] rounded-xl border">
+            <div className="flex flex-row items-center justify-center gap-2 pt-4">
                 <Image src={`/imagelogin.png`} alt={"logo"} width={33.62} height={40} className="" />
                 <p className="text-xl text-center">CodeAnt AI</p>
             </div>
@@ -45,8 +45,10 @@ export default function SignUpCard() {
             <div className="hidden md:block md:w-full flex  items-center justify-center">
     <Tabs 
         aria-label="Tabs with custom colors" 
-        variant="solid" 
-        size="lg"  
+        variant="light" 
+        size="lg"
+          
+        radius="sm"
         classNames={{
             tabList: "w-full flex items-center justify-center",
             tab: "flex-1 text-center",
@@ -54,10 +56,11 @@ export default function SignUpCard() {
             base: "w-full",
             tabContent: "w-full text-center"
         }}
+        
         color="primary" 
-        className="flex items-center justify-center w-full"
+        className="flex items-center border-1 rounded-lg m-0 justify-center w-full"
     >
-        <Tab key="SAAS" title="SAAS" className="w-full font-bold flex items-center justify-center text-center">
+        <Tab key="SAAS" title="SAAS"   className="w-full font-bold flex items-center justify-center text-center p-4">
             <SAASCardContent />
         </Tab>
         <Tab key="Self-hosted" title="Self Hosted" className="w-full font-bold flex items-center justify-center text-center">

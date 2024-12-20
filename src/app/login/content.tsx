@@ -23,11 +23,12 @@ export default function Content() {
             />
             
             
-            <div className="w-full md:w-[50%] min-h-screen flex flex-col items-center justify-center border-t-10 bg-gray-50 pb-16">
+            <div className="w-full md:w-[50%] max-h-screen flex flex-col items-center justify-center border-t-10 bg-gray-50 pb-16 md:py-4">
 
-
-                <SignUpCard/>
-                <p className="text-sm fixed bottom-16 text-center">
+            <div className="py-8 w-[94%] flex flex-row items-center justify-center">
+                    <SignUpCard />
+                </div>
+                <p className="text-sm fixed bottom-10 text-center">
                     By signing up you agree to the <span className="font-bold">Privacy Policy.</span>
                 </p>
             </div>
