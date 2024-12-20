@@ -50,13 +50,14 @@ export default function RepoCard() {
         },
     ]
 
-
   return (<>
     {repositoryInfo.map((item)=>{return(
-        <div key={item.name} className='w-full border-t-1 max-h-[108px] hover:bg-gray-50 flex flex-col'>
+        <div key={item.name} className='w-full max-h-[108px] hover:bg-gray-100 flex flex-col relative'>
+            <hr className="border-t border-gray-300 absolute left-0 right-0"></hr>
+
         <div className='flex flex-row p-4 gap-x-2'>
             <p className='font-medium'>{item.name}</p>
-          <Chip size='sm' variant='faded' color='primary' className="border-blue-500">
+          <Chip size='sm' variant='faded' color='primary' className="border-blue-200">
             {item.viewingPermission}
           </Chip>
         </div>
@@ -71,7 +72,6 @@ export default function RepoCard() {
             />
           </div>
           <div className='flex flex-row md:flex-row items-center justify-center gap-1'>
-            {/* <Image src="/programminglanguagedot.png" alt="dot" width={8} height={8}/> */}
             <GrStorage />
             <p>{item.dataUtilised} KB</p>
           </div>

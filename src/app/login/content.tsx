@@ -6,14 +6,14 @@ import SignUpCard from "../components/login/signupCard";
 
 export default function Content() {
     return (
-        <div className="flex flex-col md:flex-row justify-between items-center h-screen">
-            {/* Information cards container - hidden on mobile */}
-            <div className="hidden md:flex max-w-[447px] h-[475px] flex-col items-start justify-center relative">
-                <InformationCard />
-                <IssuesFixedInformationCard position="absolute bottom-5 left-80 z-10" />
-            </div>
+        <div className="flex flex-col md:flex-row justify-between items-center min-h-screen relative">
             
-            {/* Logo - hidden on mobile */}
+            <div className="hidden md:flex max-w-[447px] h-[455px] relative pb-10">
+  <InformationCard />
+  <IssuesFixedInformationCard position="absolute top-[160px] left-[380px] z-10" />
+</div>
+
+            
             <Image 
                 src={`/loginpagelogo.png`} 
                 alt="login logo" 
@@ -22,11 +22,13 @@ export default function Content() {
                 className="hidden md:block md:absolute md:bottom-0 left-0"
             />
             
-            {/* Sign up section - full width on mobile */}
-            <div className="w-full md:w-[50%] min-h-screen flex flex-col items-center justify-around bg-gray-50">
+            
+            <div className="w-full md:w-[50%] min-h-screen flex flex-col items-center justify-center border-t-10 bg-gray-50 pb-16">
+
+
                 <SignUpCard/>
-                <p className="text-sm">
-                    By signing up you agree to the <span className="font-bold">Privacy Policy</span>
+                <p className="text-sm fixed bottom-16 text-center">
+                    By signing up you agree to the <span className="font-bold">Privacy Policy.</span>
                 </p>
             </div>
         </div>

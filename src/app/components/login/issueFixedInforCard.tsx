@@ -33,7 +33,7 @@ export default function IssuesFixedInformationCard({ position }: { position: str
       {/* Centered Issues Fixed Section */}
       <div className="flex flex-col items-start justify-start h-full mt-4">
         <p className="font-semibold text-lg">Issues Fixed</p>
-        <p className="text-2xl font-bold">500k</p>
+        <p className="text-2xl font-bold">500k +</p>
       </div>
     </div>
   );

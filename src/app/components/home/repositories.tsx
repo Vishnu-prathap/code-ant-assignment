@@ -1,7 +1,9 @@
 import { Button, Input } from "@nextui-org/react";
 import { FiRefreshCw } from "react-icons/fi";
-import { IoAdd, IoSearchOutline } from "react-icons/io5";
+import {  IoSearchOutline } from "react-icons/io5";
 import RepoCard from "./repoCard";
+import { IoIosAdd } from "react-icons/io";
+
 
 export default function Repositories() {
   return (
@@ -17,13 +19,13 @@ export default function Repositories() {
             variant="bordered"
             size="md"
             color="default"
-            startContent={<FiRefreshCw className="w-6 h-6 md:w-4 md:h-4"/>}
+            startContent={<FiRefreshCw className="w-5 h-5 md:w-4 md:h-4"/>}
             className="flex-1 md:flex-none font-light"
           >
             Refresh All
           </Button>
           <Button
-            startContent={<IoAdd className="w-8 h-8 md:w-6 md:h-6"/>}
+            startContent={ <IoIosAdd className="w-5 h-5 md:w-4 md:h-4"/>}
             variant="solid"
             color="primary"
             size="md"
@@ -46,7 +48,7 @@ export default function Repositories() {
       </div>
 
       {/* Scrollable Content Area */}
-      <div className="flex-1 min-h-0 overflow-y-auto m-4">
+      <div className="flex-1 min-h-0 overflow-y-auto pt-2">
         <div className="pb-4">
           <RepoCard />
           <RepoCard />

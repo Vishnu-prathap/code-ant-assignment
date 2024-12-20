@@ -9,8 +9,10 @@ import { useState } from "react";
 import { LuLogOut } from "react-icons/lu";
 import { IoCallOutline } from "react-icons/io5";
 import { useRouter } from "next/navigation";
-import { RiMenu3Line } from "react-icons/ri";
+// import { RiMenu3Line } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
+import { RxHamburgerMenu } from "react-icons/rx";
+
 
 export default function Navbar() {
     const router = useRouter();
@@ -45,7 +47,8 @@ export default function Navbar() {
                     >
                         {isMobileMenuOpen ? 
                             <IoClose className="w-6 h-6" /> : 
-                            <RiMenu3Line className="w-6 h-6" />
+                            <RxHamburgerMenu className="w-6 h-6"/>
+
                         }
                     </Button>
                 </div>
@@ -56,7 +59,7 @@ export default function Navbar() {
                 isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'
             }`}>
                 <div className="p-4">
-                    <Button variant="bordered" endContent={<IoIosArrowDown />} className="w-full mb-4">
+                    <Button variant="bordered" endContent={<IoIosArrowDown />}fullWidth className=" shadow-sm w-full mb-4 items-center justify-start">
                         <p>UtkarshDhairyaPanwar</p>
                     </Button>
 
@@ -109,7 +112,7 @@ export default function Navbar() {
                         <p className="text-2xl font-medium">CodeAnt AI</p>
                     </div>
 
-                    <Button variant="bordered" endContent={<IoIosArrowDown />}>
+                    <Button variant="bordered" size="sm" fullWidth endContent={<IoIosArrowDown />}>
                         <p>UtkarshDhairyaPanwar</p>
                     </Button>
 
@@ -120,13 +123,14 @@ export default function Navbar() {
                                 color={activeKey === item.key ? "primary" : "default"}
                                 variant={activeKey === item.key ? "solid" : "light"}
                                 fullWidth
-                                className={`flex items-center justify-start p-4 ${
+                                size="sm"
+                                className={`flex items-center max-w-75% justify-start p-4 ${
                                     activeKey === item.key ? "bg-blue-600 text-white" : ""
                                 }`}
                                 startContent={item.logo}
                                 onPress={() => setActiveKey(item.key)}
                             >
-                                <p className="text-medium font-bold">{item.title}</p>
+                                <p className="text-medium font-medium">{item.title}</p>
                             </Button>
                         ))}
                     </div>
@@ -136,7 +140,7 @@ export default function Navbar() {
                     <Button 
                         fullWidth 
                         variant="light" 
-                        className="flex items-center justify-start text-medium font-bold" 
+                        className="flex items-center justify-start text-medium font-medium" 
                         startContent={<IoCallOutline className="w-[24px] h-[24px]" />}
                     >
                         Support
@@ -145,7 +149,7 @@ export default function Navbar() {
                         fullWidth 
                         variant="light" 
                         onPress={() => router.push('/login')}  
-                        className="flex items-center justify-start text-medium font-bold" 
+                        className="flex items-center justify-start text-medium font-medium" 
                         startContent={<LuLogOut className="w-[24px] h-[24px]"/>}
                     >
                         Logout
