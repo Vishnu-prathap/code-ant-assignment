@@ -1,4 +1,4 @@
-# Code Ant Assignment Two
+# Code Ant Assignment for Frontend Developer Intern
 
 A login page built with **Next.js**, **Tailwind CSS**, **Next UI Components**, and **TypeScript**. Deployed live at [https://code-ant-assignment-two.vercel.app/login](https://code-ant-assignment-two.vercel.app/login).
 
