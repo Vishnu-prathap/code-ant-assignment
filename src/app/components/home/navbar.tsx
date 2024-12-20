@@ -70,6 +70,7 @@ export default function Navbar() {
                                 color={activeKey === item.key ? "primary" : "default"}
                                 variant={activeKey === item.key ? "solid" : "light"}
                                 fullWidth
+                                radius="sm"
                                 className={`flex items-center justify-start p-4 ${
                                     activeKey === item.key ? "bg-blue-600 text-white" : ""
                                 }`}
@@ -86,6 +87,7 @@ export default function Navbar() {
                         <Button 
                             fullWidth 
                             variant="light" 
+                            radius="sm"
                             className="flex items-center justify-start text-medium font-bold" 
                             startContent={<IoCallOutline className="w-[18px] h-[18px]"  />}
                         >
@@ -94,6 +96,7 @@ export default function Navbar() {
                         <Button 
                             fullWidth 
                             variant="light" 
+                            radius="sm" 
                             onPress={() => router.push('/login')}  
                             className="flex items-center justify-start text-medium font-bold" 
                             startContent={<LuLogOut className="w-[18px] h-[18px]" />}
