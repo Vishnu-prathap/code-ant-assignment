@@ -62,21 +62,21 @@ export default function RepoCard() {
         </div>
         <div className='flex flex-row pl-4 gap-x-6 text-sm items-center justify-start'>
           <div className='flex flex-row items-center justify-center gap-1'>
-            <p className='pb-1'>{item.languageUsed}</p>
+            <p className=''>{item.languageUsed}</p>
             <Image
-              src='/programminglanguagedot.png'
+              src='/bluedot.png'
               alt='dot'
               width={8}
               height={8}
             />
           </div>
-          <div className='flex flex-row items-center justify-center gap-1'>
+          <div className='flex flex-row md:flex-row items-center justify-center gap-1'>
             {/* <Image src="/programminglanguagedot.png" alt="dot" width={8} height={8}/> */}
             <GrStorage />
             <p>{item.dataUtilised} KB</p>
           </div>
           {item.lastUpdated === 1 ?(<p>Updated {item.lastUpdated} day ago</p>):(<p>Updated {item.lastUpdated} days ago</p>)}
-          <p>Updated days ago</p>
+          
         </div>
       </div>
     )})}</>
