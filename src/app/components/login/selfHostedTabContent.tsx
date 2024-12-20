@@ -16,7 +16,7 @@ export default function SelfHostedTabContent(){
         name:'SSO'
     },
 ]
-    return(<div className="flex flex-col items-center justify-center gap-4 h-[250px]">
+    return(<div className="flex flex-col items-center justify-start gap-4 h-[250px]">
         {/* <Button>Sign in with Github</Button> */}
         {buttonData.map((item)=>{return(
             <Button onPress={()=>router.push('/')} key={item.name} startContent={<Image src={`${item.logo}`} alt={`${item.name}`} width={24} height={24}/>} className="border" size="md" fullWidth variant="light">Sign in with {item.name}</Button>
