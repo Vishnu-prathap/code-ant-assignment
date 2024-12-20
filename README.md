@@ -1,37 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Code Ant Assignment for Frontend Developer Intern
 
-## Getting Started
+A login page built with **Next.js**, **Tailwind CSS**, **Next UI Components**, and **TypeScript**. Deployed live at [https://code-ant-assignment-two.vercel.app/login](https://code-ant-assignment-two.vercel.app/login).
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tech Stack
+1. **Next.js** - React-based framework for server-side rendering and static site generation.
+2. **Tailwind CSS** - Utility-first CSS framework for rapid UI development.
+3. **Next UI Components** - Beautiful, reusable UI components for React.
+4. **TypeScript** - Type-safe development with JavaScript.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔗 Live Website
+[**Visit the live website**](https://code-ant-assignment-two.vercel.app/login)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 💻 Features
+1. **Responsive Design**:
+   - Fully responsive and mobile-friendly layout using Tailwind CSS utilities.
+   
+2. **Reusable Components**:
+   - Leveraged Next UI Components for buttons and other interactive elements.
 
-To learn more about Next.js, take a look at the following resources:
+3. **Type Safety**:
+   - Enhanced code reliability and maintainability with TypeScript.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Image Optimization**:
+   - Optimized images using the `next/image` component for faster load times.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. **User Feedback**:
+   - Interactive feedback for form actions, hover states, and button clicks.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# code-ant-assignment" 
+## 📂 File Structure
