@@ -55,12 +55,12 @@ export default function RepoCard() {
     {repositoryInfo.map((item)=>{return(
         <div key={item.name} className='w-full border-t-1 max-h-[108px] hover:bg-gray-50 flex flex-col'>
         <div className='flex flex-row p-4 gap-x-2'>
-            <p className='font-semibold'>{item.name}</p>
+            <p className='font-medium'>{item.name}</p>
           <Chip size='sm' variant='faded' color='primary' className="border-blue-500">
             {item.viewingPermission}
           </Chip>
         </div>
-        <div className='flex flex-row pl-4 gap-x-6 text-sm items-center justify-start'>
+        <div className='flex flex-row pl-4 gap-x-6 text-sm items-center justify-start pb-4'>
           <div className='flex flex-row items-center justify-center gap-1'>
             <p className=''>{item.languageUsed}</p>
             <Image
