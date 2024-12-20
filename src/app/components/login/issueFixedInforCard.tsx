@@ -3,7 +3,7 @@ import { FaArrowUp } from "react-icons/fa";
 
 export default function IssuesFixedInformationCard({ position }: { position: string }) {
   return (
-    <div className={`${position} bg-white w-[265px] h-[164px] border shadow-xl rounded-3xl flex flex-col items-start justify-center p-6`}>
+    <div className={`${position}  bg-white w-[265px] h-[164px] border shadow-xl rounded-3xl flex flex-col items-start justify-center p-6`}>
       <div className="flex flex-row w-[204px] relative items-center justify-between">
         <div className="relative w-[56px] h-[56.77px]">
           <Image
