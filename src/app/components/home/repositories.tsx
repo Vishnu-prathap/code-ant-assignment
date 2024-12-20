@@ -37,7 +37,7 @@ export default function Repositories() {
       {/* Search Section - Fixed */}
       <div className="px-4 pb-4 bg-white">
         <Input
-          className="w-full"
+          className="max-w-[366px]"
           startContent={<IoSearchOutline />}
           size="md"
           variant="bordered"
